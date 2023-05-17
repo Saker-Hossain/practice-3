@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    .login .login_title {
+        border-bottom: 1px solid #b4ce45;
+        background: none;
+        padding-bottom: 2px;
+        clear: both;
+    }
+
+    .login_title {
+        color: #3e4fa1;
+        font-size: 24px;
+        margin-bottom: 10px;
+        border: 0px;
+        font-family: "Oswald";
+    }
+
+    .form .input_holder-2 {
+        display: block;
+        float: left;
+        margin-bottom: 3px;
+    }
+
+    .form .margin-right {
+        padding-right: 46px;
+    }
+
+    element.style {
+        width: 120px;
+        display: block;
+        float: left;
+    }
+
+    .input-text {
+        width: 70%;
+        padding: 5px;
+        border: 1px solid #b4ce45;
+        margin-bottom: 5px;
+        margin-top: -25px;
+    }
+
+    .form .input_holder-2 {
+        display: block;
+        float: left;
+        margin-bottom: 3px;
+        width: 310px;
+    }
+
+    .form .margin-right {
+        padding-right: 46px;
+    }
+
+    .form .input_holder {
+        width: 680px;
+        display: block;
+        float: left;
+        margin-bottom: 5px;
+        margin-right: -800px;
+    }
+
+    .input_holder {
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 22px;
+        margin-right: 22px;
+        vertical-align: top;
+        width: 190px;
+    }
+
+    .input_holder-3 {
+        float: left;
+        margin-right: 48px;
+        width: 190px;
+    }
+    .employed-block {
+        margin: auto;
+        overflow: hidden;
+        clear: both;
+        margin-bottom: 3px;
+        width: 100%;
+    }
+    .form h3 {
+        border-bottom: 1px solid #ccc;
+        clear: both;
+        margin-bottom: 10px;
+        overflow: hidden;
+        padding-bottom: 3px;
+        color: #999;
+    }
+    .input_holder-3 label {
+        display: block;
+        font-weight: normal;
+        margin-bottom: 2px;
+    }
+    input.form_btn {
+        background: none repeat scroll 0 0 #B4CE45;
+        border: 0 none;
+        color: #464646;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 10px;
+        margin-top: 20px;
+        padding: 5px 20px;
+    }
+    .form_btn_reset {
+        background: none repeat scroll 0 0 #DDDBD4 !important;
+    }
+</style>
+
+<body>
+    <div class="login" style="width: 100%;">
+        <h2 class="login_title">Registration for SEIP Project</h2>
+        <div class="form">
+            <div class="input_holder-1 margin-right" style="width: 500px;">
+                <label>Select Course:(In SEIP project one person will be eligible for one course only)</label>
+                <br>
+                <br>
+                <span style="width: 200px; display: block; float: left;">First Preference
+                    <span style="color:red;">*</span>
+                    :
+                </span>
+                <select name="" id="" class="input-text" style="width:64%; float: right;">
+                    <option value>Select Course</option>
+                    <option value="2D and 3D Animation">2D and 3D Animation</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="Professional Digital Marketing">Professional Digital Marketing</option>
+                    <option value="Customer Support and services">Customer Support and services</option>
+                    <option value="IT Sales">IT Sales</option>
+                    <option value="E-Commerce Enterprenurship">E-Commerce Enterprenurship</option>
+                    <option value="PHP with Laravel Framework">PHP with Laravel Framework</option>
+                    <option value="Web Application Development-Dot Net">Web Application Development-Dot Net</option>
+                    <option value="Software Design and Architecture">Software Design and Architecture</option>
+                    <option value="Project Management Professional( PMP Certification)">Project Management Professional(
+                        PMP Certification)</option>
+                    <option
+                        value="Cloud Service Management using Amazon Web Services(AWS,Foundation,Associate and Professional)">
+                        Cloud Service Management using Amazon Web Services(AWS,Foundation,Associate and Professional)
+                    </option>
+                    <option value="Certified Programmer in Python(PCAP,PCPP1& PCPP2)">Certified Programmer in
+                        Python(PCAP,PCPP1& PCPP2)</option>
+                    <option value="Mobile Application Development (Android)">Mobile Application Development (Android)
+                    </option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="input_holder">
+                <div class="input_holder-1 margin-right">
+                    <label for="">Name:
+                        <span style="color: red">*</span>
+                    </label>
+                    <input type="text" class="input-text" style="    padding: 1px 2px; margin-right: 22px;">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="input_holder">
+                <div class="input_holder-3">
+                    <label>Father Name:<span>*</span></label>
+                    <input type="text" class="input-text" name="fname" id="fname" value="">
+                </div>
+                <br>
+                <div class="input_holder-3">
+                    <label>Mother Name:<span>*</span></label>
+                    <input type="text" class="input-text">
+                </div>
+                <br>
+                <div class="input_holder-3 margin-right-0" style=" width: 202px; margin-top: 5px">
+                    <label>Gender:<span>*</span></label>
+                    <select class="input-text">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="input_holder-3" style="margin-left: 200px">
+                <label>National ID:</label>
+                <input type="text" class="input-text" name="NID" id="NID" value="">
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="input_holder">
+                <div class="input_holder-3">
+                    <label>Date of Birth:<span>*</span></label>
+                    <input type="text" class="input-text datepicker hasDatepicker" >
+                </div>
+                <div class="input_holder-3">
+                    <label>Religion:<span>*</span></label>
+                    <select class="input-text">
+                        <option value="">Select Religion</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Hinduism">Hinduism</option>
+                        <option value="Buddhism">Buddhism</option>
+                        <option value="Christianity">Christianity</option>
+                    </select>
+                </div>
+                <div class="input_holder-3 margin-right-0" style="margin-left: 500px; margin-top: -50px;">
+                    <label>Ethnic Group:<span>*</span></label>
+                    <select class="input-text">
+                        <option value="" selected="selected">Select Ethnic Group</option>
+                        <option value="Armenian community of Dhaka">Armenian community of Dhaka</option>
+                        <option value="Armenians in Bangladesh">Armenians in Bangladesh</option>
+                        <option value="Bagdi caste">Bagdi caste</option>
+                        <option value="Bom people">Bom people</option>
+                        <option value="Bede people">Bede people</option>
+                        <option value="Bedia (Muslim caste)">Bedia (Muslim caste)</option>
+                        <option value="Bengali Hindus">Bengali Hindus</option>
+                        <option value="Bengali Muslims">Bengali Muslims</option>
+                        <option value="Bengali people">Bengali people</option>
+                        <option value="Bihari Muslims">Bihari Muslims</option>
+                        <option value="Bihari people">Bihari people</option>
+                        <option value="Buno people">Buno people</option>
+                        <option value="Chak people">Chak people</option>
+                        <option value="Chakma people">Chakma people</option>
+                        <option value="Chinese people in Bangladesh">Chinese people in Bangladesh</option>
+                        <option value="Dhanuk">Dhanuk</option>
+                        <option value="Garo people">Garo people</option>
+                        <option value="Indians in Bangladesh">Indians in Bangladesh</option>
+                        <option value="Indigenous peoples in Bangladesh">Indigenous peoples in Bangladesh</option>
+                        <option value="Jumma people">Jumma people</option>
+                        <option value="Kan (tribe)">Kan (tribe)</option>
+                        <option value="Khasi people">Khasi people</option>
+                        <option value="Khumi people">Khumi people</option>
+                        <option value="Khyang people">Khyang people</option>
+                        <option value="Kuki Inpi">Kuki Inpi</option>
+                        <option value="Kuki people">Kuki people</option>
+                        <option value="Kurukh people">Kurukh people</option>
+                        <option value="Lushei tribe">Lushei tribe</option>
+                        <option value="Mahle people">Mahle people</option>
+                        <option value="Maimal">Maimal</option>
+                        <option value="Mustafa Majid">Mustafa Majid</option>
+                        <option value="Mal Muslim">Mal Muslim</option>
+                        <option value="Marma people">Marma people</option>
+                        <option value="Mro people">Mro people</option>
+                        <option value="Munda people">Munda people</option>
+                        <option value="Murang people">Murang people</option>
+                        <option value="Naulak">Naulak</option>
+                        <option value="Nepalis in Bangladesh">Nepalis in Bangladesh</option>
+                        <option value="Pankho people">Pankho people</option>
+                        <option value="Rakhine people, Bangladesh">Rakhine people, Bangladesh</option>
+                        <option value="Rohingya people">Rohingya people</option>
+                        <option value="Santhal people">Santhal people</option>
+                        <option value="Stranded Pakistanis">Stranded Pakistanis</option>
+                        <option value="Tanchangya people">Tanchangya people</option>
+                        <option value="Thadou people">Thadou people</option>
+                        <option value="Template:Tribes of Bangladesh">Template:Tribes of Bangladesh</option>
+                        <option value="Tripuri people">Tripuri people</option>
+                        <option value="Vaiphei people">Vaiphei people</option>
+                        <option value="Zo people">Zo people</option>
+                        <option value="Zomi nationalism">Zomi nationalism</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="input_holder" style="margin-top: 80px;">
+                <div class="input_holder-2 margin-right">
+                    <label>Mobile:<span>*</span></label>
+                    <input type="text" class="input-text" name="mobile" maxlength="11" id="mobile" value="">
+                </div>
+                <div class="input_holder-2 margin-right-0">
+                    <label>Email:<span>*</span></label>
+                    <input type="text" class="input-text" name="email" id="email" value="">
+                </div>
+            </div>
+            <div class="employed-block">
+                <div class="employed-left">
+                    <label>Is Employed?</label>
+                    <input type="radio">Yes
+                    <input type="radio">No
+                </div>
+                <br>
+                <div class="employed-right">
+                    <label>Monthly Income:</label>
+                    <input type="text" class="input-text">
+                </div>
+            </div>
+            <h3>Present Address</h3>
+            <div class="input_holder" style="width: 668px;">
+                <label>Address:<span>*</span></label>
+                <input type="text" class="input-text">
+            </div>
+            <br>
+            <br>
+            <div class="input_holder">
+                <div class="input_holder-2 margin-right">
+                    <label>City:<span>*</span></label>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="input_holder-2 margin-right-0">
+                    <label>Post Code:<span>*</span></label>
+                    <input type="text" class="input-text">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="input_holder">
+                <div class="input_holder-3">
+                    <label>Division:<span>*</span></label>
+                    <select class="input-text">
+                        <option value="" selected="selected">Select Division</option>
+                        <option value="5">Barisal</option>
+                        <option value="2">Chittagong</option>
+                        <option value="1">Dhaka</option>
+                        <option value="3">Khulna</option>
+                        <option value="6">Rajshahi</option>
+                        <option value="7">Rangpur</option>
+                        <option value="4">Sylhet</option>
+                    </select>                          
+                </div>
+                <div class="input_holder-3">
+                    <label>District:<span>*</span></label>
+                    <select class="input-text">
+                        <option value="0" selected="selected">Select District</option>
+                    </select>
+
+
+                </div>
+                <div class="input_holder-3 margin-right-0" style="margin-left: 500px; margin-top: -50px;">
+                    <label>Sub-District:<span>*</span></label>
+                    <select name="pre_sub_district" id="pre_sub_district" class="input-text">
+                        <option value="0" selected="selected">Select Sub-District</option>
+                    </select>
+                </div>
+            </div>
+            <h3>Permanent Address</h3>
+            <div class="input_holder" style="width: 668px;">
+                <label>Address:<span>*</span></label>
+                <input type="text" class="input-text">
+            </div>
+            <br>
+            <br>
+            <div class="input_holder">
+                <div class="input_holder-2 margin-right">
+                    <label>City:<span>*</span></label>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="input_holder-2 margin-right-0">
+                    <label>Post Code:<span>*</span></label>
+                    <input type="text" class="input-text">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="input_holder">
+                <div class="input_holder-3">
+                    <label>Division:<span>*</span></label>
+                    <select class="input-text">
+                        <option value="" selected="selected">Select Division</option>
+                        <option value="5">Barisal</option>
+                        <option value="2">Chittagong</option>
+                        <option value="1">Dhaka</option>
+                        <option value="3">Khulna</option>
+                        <option value="6">Rajshahi</option>
+                        <option value="7">Rangpur</option>
+                        <option value="4">Sylhet</option>
+                    </select>                          
+                </div>
+                <div class="input_holder-3">
+                    <label>District:<span>*</span></label>
+                    <select class="input-text">
+                        <option value="0" selected="selected">Select District</option>
+                    </select>
+
+
+                </div>
+                <div class="input_holder-3 margin-right-0" style="margin-left: 500px; margin-top: -50px;">
+                    <label>Sub-District:<span>*</span></label>
+                    <select name="pre_sub_district" id="pre_sub_district" class="input-text">
+                        <option value="0" selected="selected">Select Sub-District</option>
+                    </select>
+                </div>
+            </div>
+            <h3>Highest Academic Achievement</h3>
+            <div class="input_holder">
+                <div class="input_holder-2 margin-right">
+                    <label>Level of Education:</label>
+                    <select class="input-text">
+                        <option value="">Select Education Level</option>
+                        <option value="Diploma Completed">Diploma Completed</option>
+                        <option value="Undergraduate">Undergraduate - Only Final Year</option>
+                        <option value="Graduation Completed">Graduation Completed</option>
+                        <option value="Post Graduation Completed">Post Graduation Completed</option>
+                    </select>
+                </div>	
+                
+                <div class="input_holder-2 margin-right-0">
+                    <label>Institute:</label>
+                    <input type="text" class="input-text">
+                </div>
+            </div>
+            <div class="input_holder" style="margin-top: 80px;">  
+                <div class="input_holder-2 margin-right">
+                    <label>Subject:</label>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="input_holder-2 margin-right-0">
+                    <label>Year:</label>
+                    <input type="text" class="input-text">
+                </div>
+            </div>
+            <h3>Photo</h3>
+            <div class="input_holder">
+                <div class="input_holder">
+                    <input type="file"><br>
+                    <span class="help-block" style="color: #888889">Image size should be 300x300 (Max 100KB) in JPG Format </span>
+                </div>
+            </div>
+            <h3>Security</h3>
+            <div class="input_holder">
+                <div class="input_holder-3">
+                    <label>Type the code:<span>*</span></label>
+                    <input type="text" class="input-text">
+                </div>  
+                <div class="input_holder-3">
+                    <div style="float: left; margin-top: 18px;"><img src="" width="120" height="35" style="border:0;"></div>
+                    <a href=""style="float: left; margin-top: 25px;">
+                        <img src="" alt="Reload" title="Reload new code">
+                    </a>
+                </div>
+                <input class="form_btn form_btn_reset" type="reset" value="Reset">
+                <input class="form_btn" type="submit" value="Save">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Youtube</h3>
+            <iframe width="700" height="480" src="https://www.youtube.com/embed/c_0A2HU9tI8" title="দিনে-দুপুরে মোবাইল ছি&#39;ন&#39;তা&#39;ইয়ের নয়া কৌশল | Smartphone Incident | Rajshahi | Somoy TV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.060341755788!2d90.40266547445638!3d23.780865487607713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c773d4c51555%3A0xc64f334b35dcc70d!2sUY%20LAB!5e0!3m2!1sen!2sbd!4v1684357552448!5m2!1sen!2sbd" width="600" height="480" style="border:0; margin-left: 180px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
